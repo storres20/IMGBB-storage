@@ -39,6 +39,10 @@
 
 /*  */
 
+a {
+  text-decoration: none;
+}
+
 .title {
   background-color: black;
   color: white;
@@ -51,11 +55,6 @@
   border: 2px solid black;
   border-radius: 10px;
 }
-
-/* input[type="file" i] {
-  background-color: black;
-  color: white;
-} */
 
 
 input[type=file]::file-selector-button, .btn {
