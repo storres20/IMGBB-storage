@@ -78,8 +78,9 @@ function App() {
 
       <div id="loader" className={isLoader ? "" : "hidden"} ></div>
 
+      <a href='/'><h1 className='title'>Storage Image on IMGBB</h1></a>
+      
       <div className={`animate-bottom ${isLoader ? "hidden" : ""}`}>
-        <a href='/'><h1 className='title'>Storage Image on IMGBB</h1></a>
 
         {/* Input file to select an image.
       The selected image will save on imgbb web storage 
