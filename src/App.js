@@ -25,6 +25,15 @@ function App() {
     data64 = listingData.selectedFile.split(',')
     //console.log(data64); //data64 = image converted to base64
   }
+  
+  //Input File
+  //Convert image to base 64
+  //set ansApi to false
+  const handleListing = ({ base64 }) => {
+    setListingData({ ...listingData, selectedFile: base64 })
+    
+    setAnsApi("")
+  }
 
 
   //Send image to ImgBB with AXIOS
@@ -78,7 +87,7 @@ function App() {
       the main porpuse is fill all url_image field on database's API
       */}
         <div>
-          <FileBase type="file" multiple={false} onDone={({ base64 }) => setListingData({ ...listingData, selectedFile: base64 })} />
+          <FileBase type="file" multiple={false} onDone={({ base64 }) => handleListing({ base64 })} />
 
         </div>
 
@@ -90,7 +99,7 @@ function App() {
 
         <div>
           <h2>Send this image to "imgbb" storage for free</h2>
-          <button className='btn' type='button' onClick={() => handleClick()}>Send</button>
+          <button disabled={listingData && !ansApi ? false : true}  className='btn' type='button' onClick={() => handleClick()}>Send</button>
         </div>
 
         <div className={ansApi ? "" : "hidden"}>
