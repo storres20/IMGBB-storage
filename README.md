@@ -2,7 +2,7 @@
 
 📸📸 **IMGBB - Image Storage** 📸📸 es una web app que permite almacenar imagenes locales en el storage de la web IMGBB. 📸📸📸
 
-El objetivo generar una URL de la imagen almacenada en la web para utilizar en el llenado de una API.
+El objetivo es generar una URL de la imagen almacenada en la web para utilizar en el llenado de una API.
 
 Por ejemplo: En una API de productos, se necesita la URL de la imagen del producto 
 
