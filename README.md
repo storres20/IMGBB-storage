@@ -1,4 +1,5 @@
 <h1 align="center">IMGBB - Image Storage</h1>
+<p align="center"><img src="./src/img/main.png"/></p> 
 
 📸📸 **IMGBB - Image Storage** 📸📸 es una web app que permite almacenar imagenes locales en el storage de la web IMGBB. 📸📸📸
 
